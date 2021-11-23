@@ -11,18 +11,30 @@
 
 // ciclo da 1 a 100
 for (let i = 1; i < 101; i++ ){
-    console.log(i);
+    if ((i % 3 == 0) && (!(i % 5 == 0))) {
+        console.log('Fizz');
+    }
+    if ((i % 5 == 0) && (!(i % 3 == 0))) {
+        console.log('Buzz');
+    }
+    if ((i % 3 == 0) && (i % 5 == 0)) {
+        console.log('FizzBuzz');
+    }
+    if ((!(i % 3 == 0)) && (!(i % 5 == 0))) {
+        console.log(i);
+    }
 }
-
 // MILESTONE 1
 // Per i multipli di 3 stampi “Fizz”
 
-for (let i=0; i < 101; i += 3){
-    console.log('Fizz', i);
-}
+// for (let i=0; i < 101; i += 3){
+//     console.log('Fizz', i);
+// }
 
-// per i multipli di 5 stampi Buzz.
-for (let i=0; i < 101; i += 5){
-    console.log('Buzz', i);
-}
+// // per i multipli di 5 stampi Buzz.
+// for (let i=0; i < 101; i += 5){
+//     console.log('Buzz', i);
+// }
+
+
 
