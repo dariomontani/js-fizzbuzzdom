@@ -8,3 +8,52 @@ html{
     font-size: 100%;
     font-family: 'Roboto', sans-serif;
 }
+
+.body-background{
+    background-color: #083B4C;
+}
+
+.container{
+    width: 60%;
+    margin: 0 auto;
+
+}
+
+h1{
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    font-size: 4em;
+}
+
+.red{
+    background-color: #F0466F;
+}
+
+.green{
+    background-color: #0BD6A0;
+}
+
+.yellow{
+    background-color: #FFD166;
+}
+
+.blue{
+    background-color: #1389B2;
+}
+
+ul{
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+
+.box{
+    display: flex;
+    height: 100px;
+    width: 100px;
+    justify-content: center;
+    align-items: center;
+}

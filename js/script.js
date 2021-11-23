@@ -10,19 +10,33 @@
 
 
 // ciclo da 1 a 100
+const ul = document.querySelector('.squares');
+
 for (let i = 1; i < 101; i++ ){
+    const li = document.createElement('li');
+
     if ((i % 3 == 0) && (i % 5 == 0)) {
+        li.append('FizzBuzz');
+        li.classList.add('red', 'box');
         console.log('FizzBuzz');
     }
     else if (i % 3 == 0) {
+        li.append('Fizz');
+        li.classList.add('green', 'box');
         console.log('Fizz');
     }
     else if (i % 5 == 0) {
+        li.append('Buzz');
+        li.classList.add('yellow', 'box');
         console.log('Buzz');
     }
     else {
+        li.append(i);
+        li.classList.add('blue', 'box');
         console.log(i);
     }
+
+    ul.append(li);
 }
 // MILESTONE 1
 // Per i multipli di 3 stampi “Fizz”
