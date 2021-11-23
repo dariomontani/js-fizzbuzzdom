@@ -13,3 +13,16 @@
 for (let i = 1; i < 101; i++ ){
     console.log(i);
 }
+
+// MILESTONE 1
+// Per i multipli di 3 stampi “Fizz”
+
+for (let i=0; i < 101; i += 3){
+    console.log('Fizz', i);
+}
+
+// per i multipli di 5 stampi Buzz.
+for (let i=0; i < 101; i += 5){
+    console.log('Buzz', i);
+}
+
